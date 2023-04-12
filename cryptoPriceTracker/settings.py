@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
 ]
+
+#celery
+CELERY_BROKER_URL = 'redis://localhost:6379'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
